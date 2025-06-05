@@ -1,0 +1,183 @@
+﻿
+.lights-btn-backlit {
+    box-shadow: 0 0 3px 0 rgba(255, 183, 20, 1);
+}
+
+/* .disabled-element {
+    cursor: default;
+    pointer-events: none;
+    opacity:0.5; display:inline-block; vertical-align: middle;
+}*/
+
+.control-panel-inner {
+    width: 70%;
+    background-color: #dddddd;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.cp-inner-left {
+    width: 40%;
+}
+
+.cp-inner-right {
+    min-width: 60%;
+}
+
+
+/*.button-holder {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+}*/
+
+.buttons {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #e4fdff;
+    border: 1px solid black;
+    font-size: 0.8rem;
+}
+
+/*==============   .btn-high-beam Area   ===============*/
+
+.beams-wrapper {
+    height: 190px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+}
+
+.btn-high-beam {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border: 2px solid var(--btnHighBeamPassiveColor);
+    padding: 6px 6px;
+    color: var(--btnHighBeamPassiveColor);
+}
+
+    .btn-high-beam > .btn-high-beam-top-part {
+        width: 64px;
+        height: 30px;
+        margin-bottom: 4px;
+    }
+
+        .btn-high-beam > .btn-high-beam-top-part > .btn-high-beam-strips {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+            .btn-high-beam > .btn-high-beam-top-part > .btn-high-beam-strips > .any-strip {
+                /*transform: rotate(-20deg);*/
+                width: 4px;
+                border-left: 4px solid currentColor;
+            }
+
+
+            .btn-high-beam > .btn-high-beam-top-part > .btn-high-beam-strips > .strip-1 {
+                height: 15px;
+            }
+
+            .btn-high-beam > .btn-high-beam-top-part > .btn-high-beam-strips > .strip-2 {
+                height: 24px;
+            }
+
+            .btn-high-beam > .btn-high-beam-top-part > .btn-high-beam-strips > .strip-3 {
+                height: 28px;
+            }
+
+            .btn-high-beam > .btn-high-beam-top-part > .btn-high-beam-strips > .strip-4 {
+                height: 30px;
+            }
+
+
+    .btn-high-beam > .btn-high-beam-bottom-part {
+        width: 64px;
+        height: 30px;
+        background-color: currentColor;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+/*==============   End .btn-high-beam Area   ===============*/
+
+/*==============   btn-low-beam Area   ===============*/
+
+.btn-low-beam {
+      color: var(--btnLowBeamPassiveColor);  
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border: 2px solid currentColor;
+    /*    margin-left: auto;var(--btnLowBeamPassiveColor)*/
+    /*margin-bottom: 12px;*/
+    padding: 6px 6px;
+    display: flex;
+
+}
+
+    .btn-low-beam > .btn-low-beam-left-part {
+        height: 56px;
+        width: 30px;
+        margin-right: 4px;
+        margin-top: 8px;
+    }
+
+        .btn-low-beam > .btn-low-beam-left-part > .btn-low-beam-strips {
+            height: 56px;
+            /*margin-bottom: 2px;*/
+            /*margin-top: 6px;*/
+            /*width: 30px;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            overflow: hidden;
+            transform: skewY(-20deg);
+        }
+
+            .btn-low-beam > .btn-low-beam-left-part > .btn-low-beam-strips > .any-strip {
+                flex-basis: 4px;
+                flex-grow: 0;
+                flex-shrink: 0;
+                flex-grow: 0;
+                flex-shrink: 0;
+                /*height: 4px;*/
+                /*margin-bottom: 4px;*/
+                border-top: 4px solid;
+                border-color: inherit;
+            }
+
+            .btn-low-beam > .btn-low-beam-left-part > .btn-low-beam-strips > .strip-1 {
+                width: 18px;
+            }
+
+            .btn-low-beam > .btn-low-beam-left-part > .btn-low-beam-strips > .strip-2 {
+                width: 25px;
+            }
+
+            .btn-low-beam > .btn-low-beam-left-part > .btn-low-beam-strips > .strip-3 {
+                width: 28px;
+            }
+
+            .btn-low-beam > .btn-low-beam-left-part > .btn-low-beam-strips > .strip-4 {
+                width: 30px;
+            }
+
+    .btn-low-beam > .btn-low-beam-right-part {
+        width: 30px;
+        height: 64px;
+        background-color: currentColor;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+/*==============   End #btn-low-beam Area   ===============*/
+

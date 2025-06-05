@@ -1,0 +1,48 @@
+﻿
+
+.auto-gear-box-section {
+    margin-left: 12px;
+    border: 1px solid var(--dashBoardLiningColor);
+    padding-left: var(--sectionsPadding);
+    padding-right: var(--sectionsPadding);
+    border-radius: 5px;
+    background-color: var(--controlsBgColorTwo);
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+/*  .auto-gear-box {  position: relative;
+    top: 50%;
+    transform: translateY(-50% );}*/
+
+
+.gear-index-span {
+    color: var(--markersVariableFontColorOne);
+    font-size: 0.8rem;
+}
+
+.vertical-line {
+    margin-left: auto;
+    margin-right: auto;
+    width: 2px;
+    background-color: #2e1000;
+}
+
+.auto-vertical-line-height {
+    height: 4px;
+}
+
+.gear-shift {
+    border-style:solid;
+    border-radius: 4px;
+    cursor: pointer;
+    border-width: 2px;
+    width: 28px;;
+    height:26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

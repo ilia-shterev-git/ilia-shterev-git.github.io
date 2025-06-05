@@ -1,0 +1,13 @@
+﻿
+
+
+
+
+.engine-speed-bars-meter {
+    border-radius: 5px;
+    padding: 8px 6px;
+    /*flex: 0 0 40px;*/
+    width: 40px;
+    border: 1px solid var(--dashBoardLiningColor);
+    height: 276px;
+}

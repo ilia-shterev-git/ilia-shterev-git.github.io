@@ -1,0 +1,304 @@
+﻿
+
+:root {
+    --digitMiddRadius: 6px;
+    --digitBackgroundColor: rgb(78 78 78);
+    /*-----------------------------  --*/
+    /*-----------------------------  --*/
+    --vertSegmentWidth: 6px;
+    --vertSegmentTransparentBiggerBorder: 6px;
+    --vertSegmentTransparentSmallerBorder: 5px;
+    --topBottomHorizontalSegmentsHeight: 6px;
+    /*--------------  --goodRangeColor: #009d95;  #72c47e   #00fff2; rgb(118, 224, 159, 1.0);   -----------------*/
+    --segmentOneOpacity: 0.1;
+    --segmentOneInactiveColor: rgb(118, 224, 159, var(--segmentOneOpacity));
+    /*-------------------------------*/
+    --digitalEngineSpeedMeterMainColor: var(--bellowRangeColor, green);
+    /*-------------------------------*/
+    /*-------------------------------*/
+}
+
+.digital-meter-wrapper {
+    
+}
+
+.digit-container {
+    margin-right: 7px;
+}
+
+.engine-speed-digital-meter {
+    border: 1px solid var(--dashBoardLiningColor);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--digitBackgroundColor);
+}
+
+.digits-pair-container {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 7px;
+    padding-right: 7px;
+    display: flex;
+    /* This repeated here same as the main container. It has deep and meaningful purpose. */
+    background-color: var(--digitBackgroundColor);
+    border-radius: 7px;
+    /* z-index: 22;*/
+}
+
+
+.digit-outer-wrapper {
+    width: var(--digitTotalWidth);
+    --digitOuterRadius: 7px;
+    border-radius: var(--digitOuterRadius);
+    overflow: hidden;
+    min-height: 40px;
+    transform: skew(-1.5deg);
+}
+
+.engine-speed-digital-meter .engine-meter-segments-color {
+    border-color: rgba(var(--digitalEngineSpeedMeterMainColor), 1.0);
+}
+
+/*      Top AND Bottom horizontal segments     */
+.engine-speed-digital-meter .horizontal-top-segment-a,
+.engine-speed-digital-meter .horizontal-bottom-segment-d {
+    height: var(--topBottomHorizontalSegmentsHeight);
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+
+/*      Top horizontal segment - Only One Div     */
+.engine-speed-digital-meter .horizontal-top-segment-a {
+    border-top-width: var(--topBottomHorizontalSegmentsHeight);
+    border-top-style: solid;
+}
+
+.engine-speed-digital-meter .segment-a-margin-bottom-offset {
+    margin-bottom: -5px;
+}
+/*  END    Top AND Bottom horizontal segments      */
+/*  END    Top horizontal segment - Only One Div   digit-bottom-inner-wrapper  midd-bottom-segments-wrapper  */
+
+/*    All similar digits' parts  --digitMidFIllerWidth: 32px;  */
+.engine-speed-digital-meter .midd-top-segments-wrapper, .engine-speed-digital-meter .midd-bottom-segments-wrapper {
+    --vertSegmentHeight: 28px;
+    --digitTotalWidth: 28px;
+    height: var(--vertSegmentHeight);
+    overflow: hidden;
+    width: var(--digitTotalWidth);
+}
+
+.engine-speed-digital-meter .midd-top-segments-wrapper {
+    border-bottom-left-radius: var(--digitMiddRadius);
+    border-bottom-right-radius: var(--digitMiddRadius);
+}
+
+    .engine-speed-digital-meter .midd-top-segments-wrapper .vert-left-segment-f,
+    .engine-speed-digital-meter .midd-top-segments-wrapper .vert-right-segment-b {
+        border-top: var(--vertSegmentTransparentBiggerBorder) solid transparent;
+        border-bottom: var(--vertSegmentTransparentSmallerBorder) solid transparent;
+        height: 100%;
+    }
+
+    .engine-speed-digital-meter .midd-top-segments-wrapper .vert-left-segment-f {
+        border-left-width: var(--vertSegmentWidth);
+        border-left-style: solid;
+    }
+
+    .engine-speed-digital-meter .midd-top-segments-wrapper .vert-right-segment-b {
+        border-right-width: var(--vertSegmentWidth);
+        border-right-style: solid;
+    }
+
+.engine-speed-digital-meter .midd-bottom-segments-wrapper {
+    border-top-left-radius: var(--digitMiddRadius);
+    border-top-right-radius: var(--digitMiddRadius);
+}
+
+    .engine-speed-digital-meter .midd-bottom-segments-wrapper .vert-left-segment-e,
+    .engine-speed-digital-meter .midd-bottom-segments-wrapper .vert-right-segment-c {
+        border-top: var(--vertSegmentTransparentSmallerBorder) solid transparent;
+        border-bottom: var(--vertSegmentTransparentBiggerBorder) solid transparent;
+        height: 100%;
+    }
+
+    .engine-speed-digital-meter .midd-bottom-segments-wrapper .vert-left-segment-e {
+        border-left-width: var(--vertSegmentWidth);
+        border-left-style: solid;
+    }
+
+    .engine-speed-digital-meter .midd-bottom-segments-wrapper .vert-right-segment-c {
+        border-right-width: var(--vertSegmentWidth);
+        border-right-style: solid;
+    }
+
+/*  END    All similar digits' parts  */
+
+
+.engine-speed-digital-meter .horizontal-segment-g-wrapper {
+    margin: -4px auto -5px auto;
+    width: 22px;
+    height: 7px;
+    overflow: hidden;
+}
+
+.engine-speed-digital-meter .horizontal-segment-g, .engine-speed-digital-meter .horizontal-segment-g::before {
+    width: 24px;
+    --horizontalGSegmentLeftRightBorder: 6px;
+    border-left: var(--horizontalGSegmentLeftRightBorder) solid transparent;
+    border-right: var(--horizontalGSegmentLeftRightBorder) solid transparent;
+}
+
+.engine-speed-digital-meter .horizontal-segment-g {
+    margin-left: -1px;
+    --horizontalGSegmentHalfHeight: 3px;
+    height: var(--horizontalGSegmentHalfHeight);
+    border-bottom-width: var(--horizontalGSegmentHalfHeight);
+    border-bottom-style: solid;
+}
+
+    .engine-speed-digital-meter .horizontal-segment-g::before {
+        height: var(--horizontalGSegmentHalfHeight);
+        position: relative;
+        display: block;
+        content: '';
+        top: var(--horizontalGSegmentHalfHeight);
+        left: -6px;
+        border-top-width: var(--horizontalGSegmentHalfHeight);
+        border-top-style: solid;
+        border-top-color: inherit;
+    }
+
+
+/*      Bottom horizontal segment - Only One Div    */
+.engine-speed-digital-meter .horizontal-bottom-segment-d {
+    border-bottom-width: var(--topBottomHorizontalSegmentsHeight);
+    border-bottom-style: solid;
+}
+
+.engine-speed-digital-meter .segment-d-margin-top-offset {
+    margin-top: -5px;
+}
+/*  END    Bottom horizontal segment - Only One Div    */
+
+/*===============   Numbers dysplay section ============================*/
+
+/*      Display 0    */
+.engine-speed-digital-meter .display-numb-0 .horizontal-segment-g {
+    opacity: var(--segmentOneOpacity);
+}
+/*      End Display 0    */
+
+/*      Display 1    */
+.engine-speed-digital-meter .display-numb-1 .horizontal-top-segment-a,
+.engine-speed-digital-meter .display-numb-1 .horizontal-segment-g,
+.engine-speed-digital-meter .display-numb-1 .horizontal-bottom-segment-d {
+    opacity: var(--segmentOneOpacity);
+}
+
+.engine-speed-digital-meter .display-numb-1 .vert-left-segment-e {
+    border-left-color: rgba(var(--digitalEngineSpeedMeterMainColor), var(--segmentOneOpacity));
+}
+
+.engine-speed-digital-meter .display-numb-1 .vert-left-segment-f {
+    border-left-color: rgba(var(--digitalEngineSpeedMeterMainColor), var(--segmentOneOpacity));
+}
+/*      End Display 1    */
+
+/*      Display 2    */
+.engine-speed-digital-meter .display-numb-2 .vert-right-segment-c {
+    border-right-color: rgba(var(--digitalEngineSpeedMeterMainColor), var(--segmentOneOpacity));
+}
+
+.engine-speed-digital-meter .display-numb-2 .vert-left-segment-f {
+    border-left-color: rgba(var(--digitalEngineSpeedMeterMainColor), var(--segmentOneOpacity));
+}
+/*      End Display 2    */
+
+/*      Display 3    */
+.engine-speed-digital-meter .display-numb-3 .vert-left-segment-f,
+.engine-speed-digital-meter .display-numb-3 .vert-left-segment-e {
+    border-left-color: rgba(var(--digitalEngineSpeedMeterMainColor), var(--segmentOneOpacity));
+}
+/*      End Display 3    */
+
+/*      Display 4    */
+.engine-speed-digital-meter .display-numb-4 .horizontal-top-segment-a,
+.engine-speed-digital-meter .display-numb-4 .horizontal-bottom-segment-d {
+    opacity: var(--segmentOneOpacity);
+}
+
+.engine-speed-digital-meter .display-numb-4 .vert-left-segment-e {
+    border-left-color: rgba(var(--digitalEngineSpeedMeterMainColor), var(--segmentOneOpacity));
+}
+/*      End Display 4    */
+
+/*      Display 5    */
+.engine-speed-digital-meter .display-numb-5 .vert-right-segment-b {
+    border-right-color: rgba(var(--digitalEngineSpeedMeterMainColor), var(--segmentOneOpacity));
+}
+
+.engine-speed-digital-meter .display-numb-5 .vert-left-segment-e {
+    border-left-color: rgba(var(--digitalEngineSpeedMeterMainColor), var(--segmentOneOpacity));
+}
+/*      End Display 5    */
+
+/*      Display 6    */
+.engine-speed-digital-meter .display-numb-6 .vert-right-segment-b {
+    border-right-color: rgba(var(--digitalEngineSpeedMeterMainColor), var(--segmentOneOpacity));
+}
+/*      End Display 6    */
+
+/*      Display 7    */
+.engine-speed-digital-meter .display-numb-7 .horizontal-segment-g,
+.engine-speed-digital-meter .display-numb-7 .horizontal-bottom-segment-d {
+    opacity: var(--segmentOneOpacity);
+}
+
+.engine-speed-digital-meter .display-numb-7 .vert-left-segment-e {
+    border-left-color: rgba(var(--digitalEngineSpeedMeterMainColor), var(--segmentOneOpacity));
+}
+
+.engine-speed-digital-meter .display-numb-7 .vert-left-segment-f {
+    border-left-color: rgba(var(--digitalEngineSpeedMeterMainColor), var(--segmentOneOpacity));
+}
+/*      End Display 7   */
+
+/*      Display 8    */
+.engine-speed-digital-meter .display-numb-8 {
+}
+/*      End Display 8    */
+
+/*      Display 8    */
+.engine-speed-digital-meter .display-numb-9 .vert-left-segment-e {
+    border-left-color: rgba(var(--digitalEngineSpeedMeterMainColor), var(--segmentOneOpacity));
+}
+/*      End Display 9    */
+
+
+/*      Display None    */
+.engine-speed-digital-meter .display-numb-None .horizontal-top-segment-a,
+.engine-speed-digital-meter .display-numb-None .horizontal-segment-g,
+.engine-speed-digital-meter .display-numb-None .horizontal-bottom-segment-d {
+    opacity: var(--segmentOneOpacity);
+}
+
+.engine-speed-digital-meter .display-numb-None .vert-right-segment-b {
+    opacity: var(--segmentOneOpacity);
+}
+
+.engine-speed-digital-meter .display-numb-None .vert-right-segment-c {
+    opacity: var(--segmentOneOpacity);
+}
+
+.engine-speed-digital-meter .display-numb-None .vert-left-segment-e {
+    opacity: var(--segmentOneOpacity);
+}
+
+.engine-speed-digital-meter .display-numb-None .vert-left-segment-f {
+    opacity: var(--segmentOneOpacity);
+}
+/*      End Display None     */
+/*===============   END  Numbers dysplay section ============================*/

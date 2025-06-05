@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Car Animation</title>
+    <link rel="shortcut icon" href="#">
+    <link href="../CSS/A_MainLayout.css" rel="stylesheet" />
+
+    <link href="../CSS/PedalsSection.css" rel="stylesheet" />
+    <link href="../CSS/IgnitionSwitch.css" rel="stylesheet" />
+    <link href="../CSS/WindShield.css" rel="stylesheet" />
+    <link href="../CSS/AutoShifts.css" rel="stylesheet" />
+    <link href="../CSS/ManualShifts.css" rel="stylesheet" />
+    <link href="../CSS/LightsSignals.css" rel="stylesheet" />
+    <link href="../CSS/CheckBoxToggler.css" rel="stylesheet" />
+    <link href="../CSS/CommonStyles.css" rel="stylesheet" />
+
+    <link href="../CSS/CarSpeedAnalogMeter.css" rel="stylesheet" />
+    <link href="../CSS/CarSpeedBarsMeter.css" rel="stylesheet" />
+    <link href="../CSS/CarSpeedDigitalMeter.css" rel="stylesheet" />
+
+    <link href="../CSS/EngineSpeedBarsMeter.css" rel="stylesheet" />
+    <link href="../CSS/EngineSpeedDigitalMeter.css" rel="stylesheet" />
+    <link href="../CSS/EngineSpeedAnalogMeter.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <section class="main-top">
+            <div class="main-top-wrapper">
+                <div class="top-left">
+                    <div class="engine-speed-meters">
+                        <div id="engineSpeedBarsMeter" class="engine-speed-bars-meter">
+                            <div class="bar-main-unit high-danger-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit high-danger-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit low-danger-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit low-danger-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit low-danger-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit above-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit above-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit above-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit above-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit good-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit good-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit good-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit bellow-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit bellow-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit bellow-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit bellow-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit bellow-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit bellow-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit idle-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit idle-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit idle-range-color inactive-color"></div>
+                            <div class="bar-blank-unit"></div>
+                            <div class="bar-main-unit idle-range-color inactive-color"></div>
+                        </div>
+                        <div class="engine-speed-left-section">
+                            <div class="engine-speed-digital-meter">
+                                <div class="digital-meter-wrapper">
+                                    <div class="digits-pair-container">
+                                        <div class="digit-container">
+                                            <div id="engineSpeedMeterThousandsDigit" class="display-numb-None">
+                                                <div class="digit-outer-wrapper">
+                                                    <div
+                                                        class="horizontal-top-segment-a engine-meter-segments-color segment-a-margin-bottom-offset">
+                                                    </div>
+                                                    <div class="midd-top-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-f vert-right-segment-b engine-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="horizontal-segment-g-wrapper">
+                                                        <div class="horizontal-segment-g engine-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="midd-bottom-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-e vert-right-segment-c engine-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="horizontal-bottom-segment-d engine-meter-segments-color segment-d-margin-top-offset">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="digit-container">
+                                            <div id="engineSpeedMeterHundredsDigit" class="display-numb-None">
+                                                <div class="digit-outer-wrapper">
+                                                    <div
+                                                        class="horizontal-top-segment-a engine-meter-segments-color segment-a-margin-bottom-offset">
+                                                    </div>
+                                                    <div class="midd-top-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-f vert-right-segment-b engine-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="horizontal-segment-g-wrapper">
+                                                        <div class="horizontal-segment-g engine-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="midd-bottom-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-e vert-right-segment-c engine-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="horizontal-bottom-segment-d engine-meter-segments-color segment-d-margin-top-offset">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="digit-container">
+                                            <div id="engineSpeedMeterTensDigit" class="display-numb-None">
+                                                <div class="digit-outer-wrapper">
+                                                    <div
+                                                        class="horizontal-top-segment-a engine-meter-segments-color segment-a-margin-bottom-offset">
+                                                    </div>
+                                                    <div class="midd-top-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-f vert-right-segment-b engine-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="horizontal-segment-g-wrapper">
+                                                        <div class="horizontal-segment-g engine-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="midd-bottom-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-e vert-right-segment-c engine-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="horizontal-bottom-segment-d engine-meter-segments-color segment-d-margin-top-offset">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="digit-container">
+                                            <div id="engineSpeedMeterOnesDigit" class="display-numb-None">
+                                                <div class="digit-outer-wrapper">
+                                                    <div
+                                                        class="horizontal-top-segment-a engine-meter-segments-color segment-a-margin-bottom-offset">
+                                                    </div>
+                                                    <div class="midd-top-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-f vert-right-segment-b engine-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="horizontal-segment-g-wrapper">
+                                                        <div class="horizontal-segment-g engine-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="midd-bottom-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-e vert-right-segment-c engine-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="horizontal-bottom-segment-d engine-meter-segments-color segment-d-margin-top-offset">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="engine-speed-analog-section">
+                                <div class="engine-speed-analog-meter" id="analogEngineSpeedMeter">
+                                    <div class="engine-speed-hand engine-speed-arrow" id="analogEngineSpeedArrow"></div>
+                                    <div class="centered-arrow-circle"></div>
+                                    <!---------------------------------------------------------->
+                                    <div class="main-bar bar0"><span></span></div>
+                                    <div class="main-bar bar1"><span></span></div>
+                                    <div class="main-bar bar2"><span></span></div>
+                                    <div class="main-bar bar3"><span></span></div>
+                                    <div class="main-bar bar4"><span></span></div>
+                                    <div class="main-bar bar5"><span></span></div>
+                                    <!---------------------------------------------------------->
+                                    <div class="hint-bar bar0"><span></span></div>
+                                    <div class="hint-bar bar1"><span></span><span></span></div>
+                                    <div class="hint-bar bar2"><span></span><span></span></div>
+                                    <div class="hint-bar bar3"><span></span><span></span></div>
+                                    <div class="hint-bar bar4"><span></span><span></span></div>
+                                    <div class="hint-bar bar5"><span></span><span></span></div>
+                                    <div class="hint-bar bar6"><span></span></div>
+                                    <div class="analog-meters-label-wrapper">
+                                        <div class="analog-meters-label">
+                                            <span class="span-x">&#x2715; </span>
+                                            <span class="span-1000">1000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-midd">
+                    <div class="wind-shield">
+                        <div id="horizon" class="horizon">
+                            <!--My attempt to draw a cloud and the sun. Obvously I am not an artist. Could use ::before ::after but z-ndex context ... -->
+                            <div class="the-sun"></div>
+                            <div class="cloud-1-wrapper">
+                                <div class="cloud-1-sub-1"></div>
+                                <div class="cloud-1-sub-2"></div>
+                                <div class="cloud-1-main">
+                                    <div class="cloud-1-main-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ground-wrapper">
+                            <div class="ground-terrain">
+                                <div id="groundTerrainLeft" class="ground-terrain-left"></div>
+                                <div id="groundTerrainRight" class="ground-terrain-right"></div>
+                            </div>
+                            <div class="road-wrapper">
+                                <div id="road" class="road"></div>
+                                <div class="dark-flat"></div>
+                                <div class="dark-with-hole dark-switch-off"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-right">
+                    <div class="car-speed-meters">
+                        <div class="car-speed-right-section">
+                            <div class="car-speed-digital-meter">
+                                <div class="digital-meter-wrapper">
+                                    <div class="digits-pair-container">
+                                        <div class="digit-container">
+                                            <div id="carSpeedMeterHundredsDigit" class="display-numb-None">
+                                                <div class="digit-outer-wrapper">
+                                                    <div
+                                                        class="horizontal-top-segment-a car-meter-segments-color segment-a-margin-bottom-offset">
+                                                    </div>
+                                                    <div class="midd-top-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-f vert-right-segment-b car-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="horizontal-segment-g-wrapper">
+                                                        <div class="horizontal-segment-g car-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="midd-bottom-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-e vert-right-segment-c car-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="horizontal-bottom-segment-d car-meter-segments-color segment-d-margin-top-offset">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="digit-container">
+                                            <div id="carSpeedMeterTensDigit" class="display-numb-None">
+                                                <div class="digit-outer-wrapper">
+                                                    <div
+                                                        class="horizontal-top-segment-a car-meter-segments-color segment-a-margin-bottom-offset">
+                                                    </div>
+                                                    <div class="midd-top-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-f vert-right-segment-b car-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="horizontal-segment-g-wrapper">
+                                                        <div class="horizontal-segment-g car-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="midd-bottom-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-e vert-right-segment-c car-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="horizontal-bottom-segment-d car-meter-segments-color segment-d-margin-top-offset">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="digit-container">
+                                            <div id="carSpeedMeterOnesDigit" class="display-numb-None">
+                                                <div class="digit-outer-wrapper">
+                                                    <div
+                                                        class="horizontal-top-segment-a car-meter-segments-color segment-a-margin-bottom-offset">
+                                                    </div>
+                                                    <div class="midd-top-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-f vert-right-segment-b car-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="horizontal-segment-g-wrapper">
+                                                        <div class="horizontal-segment-g car-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div class="midd-bottom-segments-wrapper">
+                                                        <div
+                                                            class="vert-left-segment-e vert-right-segment-c car-meter-segments-color">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="horizontal-bottom-segment-d car-meter-segments-color segment-d-margin-top-offset">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-speed-analog-section">
+                                <div class="car-speed-analog-meter" id="analogCarSpeedMeter">
+                                    <div class="car-speed-hand car-speed-arrow" id="analogCarSpeedArrow"></div>
+                                    <div class="centered-arrow-circle"></div>
+                                    <!---------------------------------------------------------->
+                                    <div class="main-bar bar0"><span></span></div>
+                                    <div class="main-bar bar1"><span></span></div>
+                                    <div class="main-bar bar2"><span></span></div>
+                                    <div class="main-bar bar3"><span></span></div>
+                                    <div class="main-bar bar4"><span></span></div>
+                                    <div class="main-bar bar5"><span></span></div>
+                                    <div class="main-bar bar6"><span></span></div>
+                                    <div class="main-bar bar7"><span></span></div>
+                                    <div class="main-bar bar8"><span></span></div>
+                                    <!---------------------------------------------------------->
+                                    <div class="number number0"><span>0</span></div>
+                                    <div class="number number1"><span>20</span></div>
+                                    <div class="number number2"><span>40</span></div>
+                                    <div class="number number3"><span>60</span></div>
+                                    <div class="number number4"><span>80</span></div>
+                                    <div class="number number5"><span>100</span></div>
+                                    <div class="number number6"><span>120</span></div>
+                                    <div class="number number7"><span>140</span></div>
+                                    <div class="number number8"><span>160</span></div>
+                                    <div class="analog-meters-label-wrapper">
+                                        <div class="analog-meters-label">
+                                            <span class="km-per-hour">km/h</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="carSpeedBarsMeter" class="car-speed-bars-meter"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-bottom">
+            <div class="main-bottom-wrapper">
+                <div class="bottom-left">
+                    <div class="beams-wrapper">
+                    <div id="btnHighBeam" class="btn-high-beam">
+                        <div class="btn-high-beam-top-part">
+                            <div class="btn-high-beam-strips">
+                                <div class="any-strip strip-1"></div>
+                                <div class="any-strip strip-2"></div>
+                                <div class="any-strip strip-3"></div>
+                                <div class="any-strip strip-4"></div>
+                                <div class="any-strip strip-4"></div>
+                                <div class="any-strip strip-3"></div>
+                                <div class="any-strip strip-2"></div>
+                                <div class="any-strip strip-1"></div>
+                            </div>
+                        </div>
+                        <div class="btn-high-beam-bottom-part"></div>
+                    </div>
+                    <div id="btnLowBeam" class="btn-low-beam">
+                        <div class="btn-low-beam-left-part">
+                            <div class="btn-low-beam-strips">
+                                <!--<div class="any-strip strip-1"></div>-->
+                                <div class="any-strip strip-2"></div>
+                                <div class="any-strip strip-3"></div>
+                                <div class="any-strip strip-4"></div>
+                                <div class="any-strip strip-4"></div>
+                                <div class="any-strip strip-3"></div>
+                                <div class="any-strip strip-2"></div>
+                                <div class="any-strip strip-1"></div>
+                            </div>
+                        </div>
+                        <div class="btn-low-beam-right-part"></div>
+                    </div>
+                    </div>
+                </div>
+                <div class="bottom-midd">
+                    <div class="controls-section-pedals">
+                        <!-- <div></div> left-panel   -->
+                        <div class="breaks-slider">
+                            <div class="sub-slider border-color-lining" id="breakFirmlyPressSignaler">
+                                <input type="range" min="0" max="4" value="0" step="1" id="breakPedal">
+                            </div>
+                            <p id="breakPedalValue" class="text-markers-inactive">0</p>
+                        </div>
+                        <div class="gas-slider">
+                            <div class="sub-slider">
+                                <input type="range" min="0" max="25" value="0" step="1" id="gasPedal">
+                            </div>
+                            <p id="gasRangeValue" class="text-markers-inactive">0</p>
+                        </div>
+                    </div>
+                    <div class="switch-section">
+                        <div class="switch-top-marker-encloser"><span class="switch-top-marker-span text-markers-inactive">Contact</span></div>
+                        <div class="on-off-mini-blocks-section">
+                            <div class="on-off-mini-blocks markers-inactive-border"><span
+                                    class="switch-off-mark-span text-markers-inactive">Off</span></div>
+                            <div class="on-off-mini-blocks markers-inactive-border"><span
+                                    class="switch-on-mark-span text-markers-inactive">On</span></div>
+                        </div>
+                        <div id="initialContactWrapper" class="key-toggler-encloser">
+                            <label class="toggle" for="initialContact">
+                                <input class="toggle__input" name="" type="checkbox" id="initialContact">
+                                <div class="toggle__fill"></div>
+                            </label>
+                        </div>
+                        <div class="start-engine-button-encloser">
+                            <div id="startEngineButton"
+                                class="start-engine-button start-engine-inactive-background-shadow common-inactive-border-color pointer-events-none">
+                                <p id="pStartButtonText" class="start-button-p text-markers-inactive"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auto-gear-box-section">
+                        <div id="autoGearBox" class="auto-gear-box">
+                            <div id="autoGearPark" class="gear-shift inactive-gear-mark" data-auto-gear-number="0"><span
+                                    class="gear-index-span text-markers-inactive">P</span></div>
+                            <div class="vertical-line auto-vertical-line-height"></div>
+                            <div id="autoGearNeutral" class="gear-shift inactive-gear-mark" data-auto-gear-number="1">
+                                <span class="gear-index-span text-markers-inactive">N</span></div>
+                            <div class="vertical-line auto-vertical-line-height"></div>
+                            <div id="autoGearDirect" class="gear-shift inactive-gear-mark" data-auto-gear-number="2">
+                                <span class="gear-index-span text-markers-inactive">D</span></div>
+                            <div class="vertical-line auto-vertical-line-height"></div>
+                            <div id="autoGearReverse" class="gear-shift inactive-gear-mark" data-auto-gear-number="3">
+                                <span class="gear-index-span">R</span></div>
+                            <div class="vertical-line auto-vertical-line-height"></div>
+                            <div id="autoGearFirst" class="gear-shift inactive-gear-mark" data-auto-gear-number="4">
+                                <span class="gear-index-span text-markers-inactive">1</span></div>
+                            <div class="vertical-line auto-vertical-line-height"></div>
+                            <div id="autoGearSecond" class="gear-shift inactive-gear-mark" data-auto-gear-number="5">
+                                <span class="gear-index-span text-markers-inactive">2</span></div>
+                        </div>
+                    </div>
+                    <div class="right-manual-shifts-section">
+                        <div class="manual-shifts-section">
+                            <div class="manual-shifts-inner">
+                                <div class="manual-horizontal-line manual-horiz-line-width" id="manGearNeutral"></div>
+                                <div class="manual-shift-column">
+                                    <div class="manual-shift-marker inactive-gear-mark" data-man-shift-val="1"
+                                        id="manGearFirst">
+                                        <span class="gear-index-span text-markers-inactive">1</span>
+                                    </div>
+                                    <div class="vertical-line manual-vert-line-height"></div>
+                                    <div class="manual-shift-marker inactive-gear-mark" data-man-shift-val="2"
+                                        id="manGearSecond">
+                                        <span class="gear-index-span text-markers-inactive">2</span>
+                                    </div>
+                                </div>
+                                <div class="manual-shift-column">
+                                    <div class="manual-shift-marker inactive-gear-mark" data-man-shift-val="3"
+                                        id="manGearThird">
+                                        <span class="gear-index-span text-markers-inactive">3</span>
+                                    </div>
+                                    <div class="vertical-line manual-vert-line-height"></div>
+                                    <div class="manual-shift-marker inactive-gear-mark" data-man-shift-val="4"
+                                        id="manGearFourth">
+                                        <span class="gear-index-span text-markers-inactive">4</span>
+                                    </div>
+                                </div>
+                                <div class="manual-shift-column">
+                                    <div class="manual-shift-marker inactive-gear-mark" data-man-shift-val="5"
+                                        id="manGearFifth">
+                                        <span class="gear-index-span text-markers-inactive">5</span>
+                                    </div>
+                                    <div class="vertical-line manual-vert-line-height"></div>
+                                    <div class="manual-shift-marker inactive-gear-mark" data-man-shift-val="6"
+                                        id="manGearReverse">
+                                        <span class="gear-index-span text-markers-inactive">R</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-holder">
+                            <button class="buttons button-start-animation" id="btnStartStopAnime"
+                                type="button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="../JsContent/CarAnimation.js"></script>
+</body>
+
+</html>

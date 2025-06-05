@@ -1,0 +1,12 @@
+﻿
+
+.car-speed-bars-meter {
+    border-radius: 5px;
+    padding: 8px 6px;
+    width: 40px;
+    border: 1px solid var(--dashBoardLiningColor);
+    height: 276px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+}

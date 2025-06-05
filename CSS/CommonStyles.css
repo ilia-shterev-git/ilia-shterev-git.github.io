@@ -1,0 +1,116 @@
+﻿
+.analog-meters-label-wrapper {
+    border: 1px solid white;
+    position: absolute;
+    width: 2.6rem;
+    height: 1.0rem;
+    border-radius: 5px;
+    top: 64%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.analog-meters-label {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+.button-start-animation {
+    width:100%;
+}
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+
+.common-inactive-border-color {
+    border-width: var(--inactiveDashBoardBorderColor);
+}
+
+.common-signaling-active-border-color {
+    border-color: var(--signalingBorder);
+}
+
+.common-normal-active-border-color {
+    border-color: #0ab16f;
+}
+
+.common-normal-active-bg-color {
+    border-color: #0ab16f;
+}
+
+.border-color-green {
+    border-color: #0ab16f;
+}
+
+.border-color-red {
+    /*  Yes, yes, I know, that is not good. I will keep in mind and readjust */
+    /*  my other code which will render this unnecessary */
+    border-color: red !important;
+}
+
+.bar-main-unit {
+    height: 7px;
+    border-radius: 1px;
+}
+
+.bar-blank-unit {
+    height: 5px;
+}
+
+.idle-range-color {
+    background-color: rgba(var(--idleRangeColor), 1.0);
+}
+
+.good-range-color {
+    background-color: rgba(var(--goodRangeColor), 1.0);
+}
+
+.bellow-range-color {
+    background-color: rgba(var(--bellowRangeColor), 1.0);
+}
+
+.above-range-color {
+    background-color: rgba(var(--aboveRangeColor), 1.0);
+}
+
+.low-danger-range-color {
+    background-color: rgba(var(--lowDangerRangeColor), 1.0);
+}
+
+.high-danger-range-color {
+    background-color: rgba(var(--highDangerRangeColor), 1.0);
+}
+
+.inactive-color {
+    background-color: #595959;
+}
+
+
+.markers-inactive-border {
+    border: 2px solid var(--dashBoardLiningColor);
+}
+
+.text-markers-inactive {   
+    color: var(--markersVariableFontColorOne);
+}
+
+.text-markers-shadow {
+    text-shadow: 0 0 2px #ffe6ba;
+}
+
+.inactive-gear-mark {
+    border-color: #2e1000;
+    background-color: #dccdbc;
+}
+
+.active-gear-mark {
+    border-color: green;
+    background-color: #b4d1a9;
+}
