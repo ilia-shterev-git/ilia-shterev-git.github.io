@@ -1,7 +1,7 @@
 
 First, this project nowhere uses global vars, window scope in my case. It also does not use magic numbers and strings. It havily uses classes, enums and respectively export and imports. On 2 occasions (currently) it uses IIFEs as closures.
 
-It havliy uses global within a class vars. And I take full responsibility for using very INCONSISTENTLY private methods which change such global vars and sometimes I return them altough they are global, sometimes not return them. Knowing that this is not a good practice (at all) I would keep in mind that I will caruflly review my employer's policy about such things.
+It heavily uses global within a class vars. And I take full responsibility for using very INCONSISTENTLY private methods which change such global vars and sometimes I return them altough they are global, sometimes not return them. Knowing that this is not a good practice (at all) I would keep in mind that I will caruflly review my employer's policy about such things.
 
 I also take full responsibility for comparing to thrue or false in the if statements. I know that this could be considered an unfogivable sin :) But I always and everywhere in my code use triple equals.
 
